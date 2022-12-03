@@ -3,10 +3,10 @@ import React, { useEffect, useState } from "react"
 import Image from "next/image"
 import {
   h2r,
-  keibo_accent_1,
-  keibo_accent_2,
-  keibo_accent_3,
-  keibo_crimson,
+  bisang_accent_1,
+  bisang_accent_2,
+  bisang_accent_3,
+  bisang_crimson,
 } from "../../lib/palette"
 import styles from "./styles.module.css"
 import router, { useRouter } from "next/router"
@@ -43,7 +43,7 @@ const SignInContainer = ({ providers }: SignInContainerProps) => {
     <div
       className={styles.container}
       style={{
-        backgroundColor: keibo_accent_1,
+        backgroundColor: bisang_accent_1,
       }}
     >
       <div className={styles.logo} onClick={() => router.push("/")}>
@@ -54,7 +54,7 @@ const SignInContainer = ({ providers }: SignInContainerProps) => {
         <div
           className={styles.error_message}
           style={{
-            color: keibo_crimson,
+            color: bisang_crimson,
           }}
         >
           <span>
@@ -72,7 +72,7 @@ const SignInContainer = ({ providers }: SignInContainerProps) => {
           style={{
             border: `2px solid ${agreed ? "transparent" : "#ffffff"}`,
             backgroundColor: agreed
-              ? keibo_accent_3
+              ? bisang_accent_3
               : hoverID === "checkbox"
               ? "rgba(255, 255, 255, 0.5)"
               : "rgba(0, 0, 0, 0.5)",
@@ -108,7 +108,7 @@ const SignInContainer = ({ providers }: SignInContainerProps) => {
           className={styles.button}
           style={{
             backgroundColor: h2r(
-              keibo_accent_2,
+              bisang_accent_2,
               hoverID === provider.id ? 1 : 0.75
             ),
           }}

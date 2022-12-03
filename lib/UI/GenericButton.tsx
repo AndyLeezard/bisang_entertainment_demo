@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { h2r } from "../palette"
 import styles from "./UI.module.css"
 
-type KeiboButtonProps = {
+type GenericButtonProps = {
   style?: React.CSSProperties
   color?: string
   text?: string
@@ -11,7 +11,7 @@ type KeiboButtonProps = {
   clickCallback: () => void
 }
 
-const KeiboButton: React.FC<KeiboButtonProps> = ({
+const GenericButton: React.FC<GenericButtonProps> = ({
   style,
   color,
   text,
@@ -40,4 +40,4 @@ const KeiboButton: React.FC<KeiboButtonProps> = ({
   )
 }
 
-export default KeiboButton
+export default GenericButton

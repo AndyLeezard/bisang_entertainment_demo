@@ -3,9 +3,10 @@ import { useSession, signIn, signOut } from "next-auth/react"
 import styles from "./balanceSynthesis.module.css"
 /* import { TypingText } from "../../lib/UI/typingText"
 import { shuffleArray } from "../../lib/func" */
-import KeiboButton from "../../lib/UI/KeiboButton"
-import { keibo_accent_1 } from "../../lib/palette"
+import GenericButton from "../../lib/UI/GenericButton"
+import { bisang_accent_1 } from "../../lib/palette"
 import { AppContext } from "../../lib/contexts"
+import TestingComponent from "../TestingComponent"
 
 type banalceSynthesisProps = {}
 
@@ -42,14 +43,15 @@ const BanalceSynthesis = (props: banalceSynthesisProps) => {
           }}
         >
           <span style={{ fontSize: "2rem" }}>🚀 WELCOME TO BISANG 🚀</span>
+          <TestingComponent/>
           {/* <div style={{ display: "flex" }}>
             <span>Your{String.fromCharCode(160)}</span>
             <TypingText texts={textList} waitbt={50} wait={3000} speed={27} />
           </div> */}
-          <KeiboButton
+          <GenericButton
             text="Sign In"
             useHover={!os.isTouchDevice}
-            color={keibo_accent_1}
+            color={bisang_accent_1}
             style={{ marginTop: "0.5rem" }}
             clickCallback={() => signIn()}
           />

@@ -29,7 +29,14 @@ export default NextAuth({
       from: 'NextAuth.js <no-reply@example.com>'
     }), */
   ],
-  adapter: FirestoreAdapter(firebaseConfig),
+  adapter: FirestoreAdapter({
+    apiKey: process.env.FIREBASE_APIKEY,
+    authDomain: process.env.FIREBASE_AUTHDOMAIN,
+    projectId: process.env.FIREBASE_PROJECTID,
+    storageBucket: process.env.FIREBASE_STORAGEBUCKET,
+    messagingSenderId: process.env.FIREBASE_MESSAGINGSENDERID,
+    appId: process.env.FIREBASE_APPID,
+  }),
   pages: {
     signIn: "/auth/signin",
     /* signOut: "/auth/signout",
