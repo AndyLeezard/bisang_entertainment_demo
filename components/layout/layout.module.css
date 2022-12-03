@@ -1,0 +1,27 @@
+.footer {
+  display: flex;
+  flex: 1;
+  padding: 1rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+  font-weight: 300;
+  font-size: 1.25rem;
+}
+
+.footer a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* flex-grow: 1; */
+}
+
+.line {
+  height: 1rem;
+  margin-bottom: 4px;
+}
+
+.icon {
+  margin-left: 0.5rem;
+}

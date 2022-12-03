@@ -1,0 +1,56 @@
+.btn {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+[data-theme='light'] .btn {
+  background-color: rgba(210, 210, 210, 0.8);
+}
+
+[data-theme='light'] .btn:hover {
+  background-color: rgba(210, 210, 210, 1);
+}
+
+[data-theme='dark'] .btn {
+  background-color: rgba(107, 107, 107, 0.8);
+}
+
+[data-theme='dark'] .btn:hover {
+  background-color: rgba(107, 107, 107, 1);
+}
+
+.theme_btn_svg {
+  transition: stroke 400ms;
+}
+
+[data-theme='light'] .theme_btn_svg {
+  stroke: #3f54d1;
+}
+
+[data-theme='dark'] .theme_btn_svg {
+  stroke: #ffd13b;
+}
+
+.moon {
+  stroke-dasharray: 0px 1px;
+  opacity: 0;
+  transition: stroke-dasharray 0.5s ease-in, opacity 300ms ease-in;
+}
+
+.sun {
+  stroke-dasharray: 1px 1px;
+  opacity: 1;
+  transition: stroke-dasharray 0.5s ease-in, opacity 300ms ease-in;
+}
+
+[data-theme='dark'] .moon {
+  stroke-dasharray: 1px 1px;
+  opacity: 1;
+}
+
+[data-theme='dark'] .sun {
+  stroke-dasharray: 0px 1px;
+  opacity: 0;
+}

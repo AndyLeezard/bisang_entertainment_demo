@@ -1,0 +1,79 @@
+#sign_in_button {
+  position: relative;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-radius: 4px;
+  transition-duration: 250ms;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+[data-theme='dark'] #sign_in_button {
+  border: 1px solid #5e5e5f;
+}
+
+[data-theme='dark'] #sign_in_button:hover {
+  background-color: #434548;
+}
+
+[data-theme='light'] #sign_in_button {
+  border: 1px solid #dbdbdb;
+}
+
+[data-theme='light'] #sign_in_button:hover {
+  background-color: #e3e3e3;
+}
+
+#auth_dropdown {
+  position: fixed;
+  top: 52px;
+  width: 50px;
+  height: 35px;
+  background-color: #5cc991;
+  border-radius: 0.5rem;
+}
+
+#auth_button {
+  background-color: #434548;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 36px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#auth_button img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+[data-theme='light'] #auth_button {
+  background-color: rgba(210, 210, 210, 0.8);
+}
+
+[data-theme='light'] #auth_button:hover {
+  background-color: rgba(210, 210, 210, 1);
+}
+
+[data-theme='dark'] #auth_button {
+  background-color: rgba(107, 107, 107, 0.8);
+}
+
+[data-theme='dark'] #auth_button:hover {
+  background-color: rgba(107, 107, 107, 1);
+}
+
+#dropdown_base {
+  top: 52px;
+  right: 100px;
+  min-width: 100px;
+  border-radius: 4px;
+}

@@ -1,0 +1,1 @@
+export { firestore, firebase_auth } from "./firebase_client"

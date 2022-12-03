@@ -2,8 +2,18 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Kanit", sans-serif;
+  /* transition-duration: 250ms; */
+}
+
+[data-theme="dark"] body {
+  background-color: #212226;
+  color: #fff;
+}
+
+[data-theme="light"] body {
+  background-color: #ffffff;
+  color: #212226;
 }
 
 a {
@@ -15,12 +25,65 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+.filter-white {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(313deg)
+    brightness(107%) contrast(101%);
+}
+
+.available-space {
+  padding-bottom: 100px;
+  padding-top: 80px;
+}
+
+.available-space,
+.absolute-fill {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+.available-space,
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.available-space,
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.fade-in {
+  animation: 1s fade-in forwards;
+}
+
+.fade-in-2 {
+  animation: 2s fade-in forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
   }
-  body {
-    color: white;
-    background: black;
+
+  66% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
+
+/* @keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+} */
