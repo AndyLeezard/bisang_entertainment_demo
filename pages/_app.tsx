@@ -15,7 +15,7 @@ function MyApp({
       <ThemeProvider>
         <SessionProvider session={session}>
           <AppWrapper >
-            {/* <WavyBackground useColorMatrix/> */}
+            <WavyBackground useColorMatrix/>
             <Component {...pageProps} />
           </AppWrapper>
         </SessionProvider>

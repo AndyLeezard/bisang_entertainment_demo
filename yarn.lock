@@ -1931,10 +1931,10 @@ natural-compare@^1.4.0:
   resolved "https://registry.yarnpkg.com/natural-compare/-/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
   integrity sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==
 
-next-auth@^4.10.2:
-  version "4.17.0"
-  resolved "https://registry.yarnpkg.com/next-auth/-/next-auth-4.17.0.tgz#776d2a0999d4e2eb56968cad282c1ecd37516a2c"
-  integrity sha512-aN2tdnjS0MDeUpB2tBDOaWnegkgeMWrsccujbXRGMJ607b+EwRcy63MFGSr0OAboDJEe0902piXQkt94GqF8Qw==
+next-auth@^4.18.0:
+  version "4.18.0"
+  resolved "https://registry.yarnpkg.com/next-auth/-/next-auth-4.18.0.tgz#f6fb4d2a1bfd6e90650755c13324e24d1f44b0d4"
+  integrity sha512-lqJtusYqUwDiwzO4+B+lx/vKCuf/akcdhxT5R47JmS5gvI9O6Y4CZYc8coysY7XaMGHCxfttvTSEw76RA8gNTg==
   dependencies:
     "@babel/runtime" "^7.16.3"
     "@panva/hkdf" "^1.0.1"
@@ -1946,7 +1946,7 @@ next-auth@^4.10.2:
     preact-render-to-string "^5.1.19"
     uuid "^8.3.2"
 
-next-themes@^0.2.0:
+next-themes@^0.2.1:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/next-themes/-/next-themes-0.2.1.tgz#0c9f128e847979daf6c67f70b38e6b6567856e45"
   integrity sha512-B+AKNfYNIzh0vqQQKqQItTS8evEouKD7H5Hj3kmuPERwddR2TxvDSFZuTj6T7Jfn1oyeUyJMydPl1Bkxkh0W7A==
