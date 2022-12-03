@@ -4,18 +4,17 @@ import Layout from "../components/layout"
 import { ThemeProvider } from "next-themes"
 import { SessionProvider } from "next-auth/react"
 import { AppWrapper } from "../lib/contexts"
-import WavyBackground from "../components/layout/wavyBackground"
 
-function MyApp({
-  Component,
-  pageProps: { session, ...pageProps },
-}: AppProps) {
+function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
   return (
     <Layout>
       <ThemeProvider>
         <SessionProvider session={session}>
-          <AppWrapper >
-            <WavyBackground useColorMatrix/>
+          <AppWrapper>
+            {/* <div
+              className="absolute-fill fade-in-2"
+              style={{ overflow: "hidden", zIndex: -5 }}
+            /> */}
             <Component {...pageProps} />
           </AppWrapper>
         </SessionProvider>

@@ -47,8 +47,8 @@ const SignInContainer = ({ providers }: SignInContainerProps) => {
       }}
     >
       <div className={styles.logo} onClick={() => router.push("/")}>
-        <Image src={`/letter_64.png`} alt={"Keibo"} width={24} height={24} />
-        <span>Keibo</span>
+        <Image src={`/favicon.ico`} alt={"Keibo"} width={24} height={24} />
+        <span>Bisang</span>
       </div>
       {error ? (
         <div
