@@ -7,10 +7,10 @@ const Layout = ({ children }: React.PropsWithChildren<{}>) => {
     <>
       {/* <Navbar links={data.links} /> */}
       <Head>
-        <title>Keibo - Investment Tracker</title>
+        <title>Bisang Entertainment - Homepage Prototype</title>
         <meta
           name="description"
-          content="Customized real-time simulation & tracking solution for your crypto / NFT / stock / funds investment and trading portfolio."
+          content="Prototype created by Andy Lee"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
