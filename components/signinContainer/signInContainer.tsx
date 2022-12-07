@@ -47,7 +47,7 @@ const SignInContainer = ({ providers }: SignInContainerProps) => {
       }}
     >
       <div className={styles.logo} onClick={() => router.push("/")}>
-        <Image src={`/favicon.ico`} alt={"Keibo"} width={24} height={24} />
+        <Image src={`/favicon.ico`} alt={"BSang"} width={24} height={24} />
         <span>Bisang</span>
       </div>
       {error ? (
@@ -100,7 +100,7 @@ const SignInContainer = ({ providers }: SignInContainerProps) => {
           )}
         </div>
         <span>
-          I agree to the Keibo <a href="/conditions">Terms of Service</a>.
+          I agree to the <a href="/conditions">Terms of Service</a>.
         </span>
       </div>
       {Object.values(providers).map((provider) => (
